@@ -13,5 +13,33 @@
     >
       Click me
     </button>
+    <div>
+      <button onclick="document.body.style.backgroundColor='yellow'">
+        Click me: Yellow
+      </button>
+    </div>
+    <div>
+      <button onclick="document.body.style.backgroundColor='white'">
+        Click me : White
+      </button>
+    </div>
+    <div>
+      <button onclick="document.body.style.backgroundColor='blue'">
+        Click me : blue
+      </button>
+    </div>
+    <div>
+      <button onclick="makegreen()">Click me: Red (JS)</button>
+    </div>
+
+    <div>
+      <button id="bluebutton">click me: blue</button>
+    </div>
+    <script>
+      function makegreen() {
+        document.body.style.backgroundColor = "red";
+      }
+    </script>
+    <script src="js/event.js"></script>
   </body>
 </html>
