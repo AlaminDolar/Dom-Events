@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comment</title>
+  </head>
+  <body>
+    <h1>This is Cimment House</h1>
+    <section>
+      <h4>Your comment</h4>
+
+      <div id="comment-container">
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Praesentium
+          voluptatum ad consequuntur molestias mollitia optio architecto a fugit
+          velit totam aperiam libero doloremque minus perspiciatis, commodi
+          neque similique. Consequatur, laudantium!
+        </p>
+        <p>
+          Officia sit cum itaque ut totam voluptate animi deleniti in a illo,
+          unde exercitationem voluptates expedita voluptatibus eveniet modi
+          quaerat facilis nemo accusamus quos ducimus accusantium provident
+          placeat reiciendis. Rem!
+        </p>
+        <p>
+          Provident doloribus maiores dolorum maxime non, nisi animi neque enim,
+          culpa praesentium sint, aliquid atque tempora ratione quos. Et libero
+          officia omnis sed dolore modi nemo suscipit quidem eum animi!
+        </p>
+        <p>add your comment</p>
+      </div>
+      <div>
+        <textarea name="" id="textarea" cols="60" rows="4"></textarea>
+
+        <br />
+        <button id="submitbutton">Submit</button>
+      </div>
+    </section>
+
+    <script>
+      //step-1 add event handler
+      document
+        .getElementById("submitbutton")
+        .addEventListener("click", function () {
+          //step two get user comment
+          const newcomment = document.getElementById("textarea");
+
+          //step 3 create p element
+          const newsubmit = document.createElement("p");
+          newsubmit.innerText = newcomment.value;
+
+          //step 4 append to child
+          const append = document.getElementById("comment-container");
+          append.appendChild(newsubmit);
+        });
+    </script>
+  </body>
+</html>
