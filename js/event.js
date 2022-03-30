@@ -24,10 +24,15 @@ green.onclick=function(){
   document.body.style.backgroundColor="green";}
 
 
-  //hot pink
-  const hotpink=document.getElementById('make-hotpink');
-  console.log(hotpink);
+  //hot pink  2 step
+const hotpink=document.getElementById('make-hotpink');
+console.log(hotpink);
  hotpink.addEventListener('click',function(){
 document.body.style.backgroundColor='hotpink';
 
+ })
+
+ //direct addEcentLisener 1 step
+ document.getElementById("make-lightblue").addEventListener('click',function(){
+   document.body.style.backgroundColor='lightblue';
  })
