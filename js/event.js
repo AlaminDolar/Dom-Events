@@ -17,9 +17,17 @@ function makeB(){
 }
 
 
-//use direct function
 
+//handle event anonymous function
 const green = document.getElementById("make-green");
-
 green.onclick=function(){
   document.body.style.backgroundColor="green";}
+
+
+  //hot pink
+  const hotpink=document.getElementById('make-hotpink');
+  console.log(hotpink);
+ hotpink.addEventListener('click',function(){
+document.body.style.backgroundColor='hotpink';
+
+ })
